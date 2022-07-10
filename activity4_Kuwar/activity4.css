@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+.animation_container {
+  overflow: hidden;
+  width: 75%;
+  margin: auto;
+  position: relative;
+}
+
+.pic1 {
+  width: 100%;
+  border: ridge 25px gray;
+  animation: pic1InvAn 0.3s ease-in-out 5s 2;
+}
+
+@keyframes pic1InvAn {
+  0% {filter: invert(0%);}
+  100% {filter: invert(100%);}
+}
+
+.camera, .p1 {
+  position: absolute;
+}
+
+.heart1, .heart2, .heart3, .heart4, .heart5,
+.heart6, .heart7, .heart8, .heart9, .heart10,
+.heart11, .heart12 {
+  position: absolute;
+  opacity: 0%;
+}
+
+.camera {
+  width:20%;
+  bottom: 25%;
+  left: 20%;
+  animation: zoomCamera 5s forwards;
+}
+
+@keyframes zoomCamera {
+  0% {transform: scale(0);}
+  10% {transform: scale(1);}
+  99% {opacity: 100%;}
+  100% {opacity: 0%;}
+}
+
+.p1 {
+  top: 20%;
+  left: 20%;
+  font-size: 4em;
+  font-family: "Arial Black";
+  color: red;
+  animation: textAn 4s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes textAn {
+  0% {transform: scale(0);}
+  25% {transform: scale(1); color: red;}
+  99% {color: white; opacity: 100%;}
+  100% {opacity: 0%;}
+}
+
+@keyframes heartAn {
+  0% {opacity: 100%}
+  100% {opacity: 0%}
+}
+
+.heart1 {
+  width: 15%;
+  top: 20%;
+  left: 20%;
+  animation: heartAn 0.5s linear 5.5s infinite alternate-reverse;
+}
+
+.heart2 {
+  width: 10%;
+  top: 75%;
+  left: 75%;
+  animation: heartAn 0.5s linear 6.5s infinite alternate-reverse;
+}
+
+.heart3 {
+  width: 8%;
+  top: 50%;
+  left: 70%;
+  animation: heartAn 0.5s linear 7.5s infinite alternate-reverse;
+}
+
+.heart4 {
+  width: 13%;
+  top: 75%;
+  left: 10%;
+  animation: heartAn 0.5s linear 6s infinite alternate-reverse;
+}
+
+.heart5 {
+  width: 6%;
+  top: 30%;
+  left: 50%;
+  animation: heartAn 0.5s linear 7s infinite alternate-reverse;
+}
+
+.heart6 {
+  width: 5%;
+  top: 60%;
+  left: 50%;
+  animation: heartAn 0.5s linear 5.8s infinite alternate-reverse;
+}
+
+.heart7 {
+  width: 9%;
+  top: 10%;
+  left: 77%;
+  animation: heartAn 0.5s linear 6.2s infinite alternate-reverse;
+}
+
+.heart8 {
+  width: 10%;
+  top: 10%;
+  left: 10%;
+  animation: heartAn 0.5s linear 6.8s infinite alternate-reverse;
+}
+
+.heart9 {
+  width: 10%;
+  top: 50%;
+  left: 15%;
+  animation: heartAn 0.5s linear 7.2s infinite alternate-reverse;
+}
+
+.heart10 {
+  width: 9%;
+  top: 50%;
+  left: 40%;
+  animation: heartAn 0.5s linear 6.3s infinite alternate-reverse;
+}
+
+.heart11 {
+  width: 6%;
+  top: 75%;
+  left: 50%;
+  animation: heartAn 0.5s linear 5.9s infinite alternate-reverse;
+}
+
+.heart12 {
+  width: 8%;
+  top: 30%;
+  left: 75%;
+  animation: heartAn 0.5s linear 8s infinite alternate-reverse;
+}
