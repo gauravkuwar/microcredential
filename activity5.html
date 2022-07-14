@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Activity 5 - Gaurav Kuwar</title>
+  </head>
+  <body>
+    <h1>Gaurav Kuwar: activity 5</h1>
+    <script type="text/javascript">
+      // let number1 = 56;
+      // let number2 = -80;
+      // let number3 = 3/4;
+      // let boolean1 = true;
+      //
+      // let color = "beige";
+      // let msg = "Hello World!";
+      //
+      // console.log(number1);
+      // console.log("Good evening!");
+      // console.log("The color is: " + color);
+      // console.log(`The color is: ${color}`);
+      //
+      // // let name1 = prompt("Enter a name: ", "WHERE AM I?");
+      //
+      // /*
+      // multiple line comment
+      //
+      // */
+      //
+      // let num1 = prompt("Enter number 1: ");
+      // num1 = parseInt(num1);
+      // let num2 = parseInt(prompt("Enter number 2: "));
+      // let summation = num1 + num2;
+      //
+      // // STRINGS
+      // let name = "Gaurav Kuwar";
+      // let nameLength = name.length;
+      // let upperName = name.toUpperCase();
+      // let lowerName = name.toLowerCase();
+      // let newName = name.slice(2, 8);
+      //
+      // // ARRAYS
+      // let everything = [-23, 'color', true, "Peter Pan", 88];
+      // let copyArray = everything;
+      // let sliceArray = everything.slice();
+
+
+      // ACTIVITY 5
+
+      console.log(" =========== Activity 5.1: variables and prompt method =========== ");
+      let name = prompt("Enter a name:");
+      let lucky_num = prompt("Enter your lucky number:");
+      console.log("a) Welcome to the program " + name + ". Your lucky number is " + lucky_num);
+      console.log(`b) Good Morning ${name}. Your entered number: ${lucky_num}`);
+
+      console.log(" =========== Activity 5.2: string and string methods =========== ");
+      let word = prompt("Enter a word:");
+      console.log("a) The second letter of the word is: " + word[1]);
+      console.log(`b) The length of word ${word} is ${word.length}`)
+      console.log(`c) Uppercase: ${word.toUpperCase()}`)
+      console.log(`d) The last two characters in the word ${word} are ${word.slice(-2)}`)
+
+      console.log(" =========== Activity 5.3: arrays and array methods =========== ");
+      let mixed_array = [1, 2, true, false, 'a', 'b', "Hello", "World"];
+      console.log("a) Mixed array with initial values: " + mixed_array);
+
+      let animal = prompt("Enter an ANIMAL:");
+      mixed_array.push(animal);
+      console.log("b) Mixed array with an new animal added to the end: " + mixed_array);
+
+      let neg_num = parseInt(prompt("Enter a NEGATIVE NUMBER:"));
+      mixed_array.unshift(neg_num);
+      console.log("c) Mixed array with a new NEGATIVE NUMBER added to the front, beginning, of the array : " + mixed_array);
+
+      let copyArray = mixed_array.slice();
+      copyArray.reverse();
+      console.log(`d) Mixed array ${mixed_array} and reverse of copy array: ${copyArray}`);
+    </script>
+  </body>
+</html>
