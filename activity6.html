@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gaurav Kuwar: activity 6</title>
+  </head>
+  <body>
+    <h1>Gaurav Kuwar: activity 6</h1>
+    <script type="text/javascript">
+      /*
+      let goodMood = false;
+      let gotSleep = true;
+
+      if (goodMood === gotSleep) {
+        console.log("Today is a good day!");
+      }
+
+      console.log("I am moody!");
+
+      // example 2) check if two numbers are exactly equal to
+      let num1 = 1, num2 = -7, checkNum;
+
+      if (num1 === num2) {
+        checkNum = true;
+      }
+      else {
+        checkNum = false;
+      }
+
+      console.log(`Are the numbers exactly equal to? ${checkNum}`);
+
+      // example 3) check if two numbers are exactly equal to, greater than, or less than.
+      if (num1 === num2) {
+        console.log('Numbers are the same!');
+      } else if (num1 > num2) {
+        console.log(`${num1} is greater than ${num2}`);
+      } else if (num2 > num1) {
+        console.log(`${num1} is less than ${num2}`);
+      } else {
+        console.log("INVALID!");
+      }
+
+      // example 4) pick a value from an array
+      let colors = ['red', 'blue', 'green', 'yellow', 'orange'];
+      let userPick = parseInt(prompt("Select a color from 1 to 5")); // parseInt to convert input into integer
+      let selectColor = colors[userPick - 1];
+
+      if (selectColor === 'red') {
+        console.log("The selected color is red!");
+      } else if (selectColor === 'blue') {
+        console.log("The selected color is blue!");
+      } else if (selectColor === 'green') {
+        console.log("The selected color is green!");
+      } else if (selectColor === 'yellow') {
+        console.log("The selected color is yellow!");
+      } else if (selectColor === 'orange') {
+        console.log("The selected color is orange!");
+      } else {
+        console.log("INVALID!");
+      }
+
+      // example 5) write JS code that opens a dialog box and asks the user to enter a number
+      // If the user enters a string it will console a message as: ______ is a string. Otherwise,
+      // if the user enters a number, it will console a message as: ______ is a number.
+      let userInput = prompt("Enter a number: ");
+      let checkInput = isNaN(parseInt(userInput));
+
+      if (checkInput) {
+        console.log(`${userInput} is a string`);
+      } else {
+        console.log(`${userInput} is a number`);
+      }
+
+      // example 6) password checker
+      let password = prompt("Enter a password with 6+ characters");
+
+      if (password.length >= 6) {
+        console.log("Password has 6+ characters!");
+
+        if (password.indexOf(" ") === -1) {
+          console.log(`${password} Great! Password has no space!`);
+        } else {
+          console.log("Warning! Password can't have a space!");
+        }
+      } else {
+        console.log("INVALID! Password has less than 6 characters!");
+      }
+
+      // example 7
+      let name = prompt("Enter a name: ");
+
+      if (name) {
+        console.log(`Welcome to the program ${name}`);
+      } else {
+        console.log("You did not enter a name!");
+      }
+
+
+      // example 8) simple inner if-else statment of example 6 by using the AND operator
+      let password = prompt("Enter a password with 6+ characters");
+
+      if (password.length >= 6 && password.indexOf(" ") === -1) {
+        console.log(`${password} is valid`);
+      } else {
+        console.log(`WARNING! ${password} is an incorrect password format!`);
+      }
+
+      // example 10) write a JS code that asks the user to rate a book as:
+      // 1) Excellent, 2) Good/Average 3) Bored!
+      // If the user select "Bored" the program will prompt another window asking
+      // the user why they are bored
+
+      let rate = prompt('Enter a rate for "The Book":\n 1) Excellent\n 2) Good/Average\n 3) Bored\n Select a number from 1 to 3');
+
+      if (rate === '3') {
+        let comments = prompt('We are sorry that you find "The Book" boring. Please comment: ');
+        console.log(`Thank you for the feedback: ${comments}`);
+      } else if (rate == '1' || rate == '2') {
+        console.log('Thank you for choosing "The Book"');
+      } else {
+        console.log('INVALID RATE!');
+      }
+
+      // example 11) ticket's price
+      let age = 17;
+
+      if (0 <= age && age <= 7 || age >= 65) {
+        console.log("FREE ticket");
+      } else if (age >= 8 && age <= 17) {
+        console.log("$5.00 ticket per person");
+      } else if (age >= 18 && age < 65) {
+        console.log("$8.00 ticket per person");
+      } else {
+        console.log("INVALID AGE!");
+      }
+
+      // example 12) convert example 4 using switch statement
+      let colors = ['red', 'blue', 'green', 'yellow', 'orange'];
+      let userPick = parseInt(prompt("Select a color from 1 to 5")); // parseInt to convert input into integer
+      let selectColor = colors[userPick - 1];
+
+      switch (selectColor) {
+        case 'red':
+          console.log("The selected color is red!");
+          break;
+        case 'blue':
+          console.log("The selected color is blue!");
+          break;
+        case 'green':
+          console.log("The selected color is green!");
+          break;
+        case 'yellow':
+          console.log("The selected color is yellow!");
+          break;
+        case 'orange':
+          console.log("The selected color is orange!");
+          break;
+        default:
+          console.log("INVALID!");
+      }
+      */
+
+      // ACTIVITY 6
+      // 1) if, else if, else statement
+      let userVal = prompt("Enter a number or string");
+      let valInt = parseInt(userVal);
+
+      if (isNaN(valInt)) {
+        console.log(`${userVal} is a string`);
+      } else if (valInt < 0) {
+        console.log(`${userVal} is a negative number`);
+      } else if (valInt >= 0) {
+        console.log(`${userVal} is a positive number`);
+      } else {
+        console.log("INVALID INPUT");
+      }
+
+      // 2) switch statement
+      let userSelectedColor = prompt("Pick a color (type a, b, or c):\na) Red\nb) Blue\nc) Green")
+      switch (userSelectedColor) {
+        case "a": case "A":
+          console.log("You selected Red color.")
+          break;
+        case "b": case "B":
+          console.log("You selected Blue color.")
+          break;
+        case "c": case "C":
+          console.log("You selected Green color.")
+          break;
+        default:
+          console.log("Color is not in the list!")
+      }
+
+    </script>
+  </body>
+</html>
