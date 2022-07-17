@@ -148,18 +148,6 @@ footer div {
   filter: sepia(30%);
 }
 
-.mainH1Container {
-  /* border: solid red; */
-  font-size: 150%;
-  color: white;
-  font-family: "Arial Bold";
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow: hidden;
-}
-
 .colosseumLink, .treviLink {
   background-color: #d84315;
   color: white;
@@ -183,7 +171,7 @@ footer div {
   /* border: solid red; */
   position: absolute;
   width: 100%;
-  top: 70%;
+  top: 80%;
 }
 
 .internalLinks a {
@@ -196,17 +184,26 @@ footer div {
   animation-fill-mode: both;
 }
 
+.mainH1Container {
+  /* border: solid red; */
+  font-size: 150%;
+  color: white;
+  font-family: "Arial Bold";
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+
 @keyframes mainH1An {
-  0% {transform: translate(0, 130%);}
+  0% {transform: translate(0, 180%);}
   100% {transform: translate(0, 0%);}
 }
 
 .mainImgHr {
-  position: absolute;
-  width: 40%;
-  left: 50%;
-  top: 55%;
-  transform: translate(-50%, -50%);
+  margin-bottom: 0;
   height: 5px;
   color: white;
   background-color: white;
@@ -219,7 +216,7 @@ footer div {
 @keyframes hrAn {
   0% {width: 0%; opacity: 0%;}
   5% {opacity: 100%;}
-  50% {width: 40%}
+  50% {width: 100%}
   95% {opacity: 100%;}
   100% {width: 0%; opacity: 0%;}
 }
