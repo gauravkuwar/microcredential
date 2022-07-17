@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gaurav Kuwar: activity 7</title>
+  </head>
+  <body>
+    <h1>Type your name: activity 7 (loops)</h1>
+    <script type="text/javascript">
+      /*
+      // example 1: use for loop to print an incrementing counter from 0 to 4
+      for (let counter = 0; counter <= 10; counter += 5) {
+        console.log(`The current counter is ${counter}`);
+      }
+
+      // example 2: write a JS code that uses for loop to print even numbers between 0 and 100 exclusive
+      let num = parseInt(prompt("Enter a number between 0 and 100"));
+
+      for (num; num < 100; num++) {
+        if (num % 2 == 0) {
+          console.log(num);
+        }
+      }
+      // example 3: write a JS code that uses for loop to print numbers from 100 to 0, inclusive, with a decrement of 10
+      for (let num = 100; num >= 0; num -= 10) {
+        console.log(num);
+      }
+
+      // example 4) Use a for loop to display each item in array cars[]
+      let cars = ['Mazda', 'Tesla', 'Dodge','BMW', 'Porshe'];
+      for (let i=0; i < cars.length; i++) {
+        console.log(`Car ${i+1} = ${cars[i]}`);
+      }
+
+      // example 5: use for ... of loop to print each item in the array
+      let cars = ['Mazda', 'Tesla', 'Dodge','BMW', 'Porshe'];
+      for (let eachItem of cars) {
+        console.log(eachItem);
+      }
+
+      // example 6: use for loop to print each character in a string
+      let myString = "World!";
+      for (let eachLetter of myString) {
+        console.log(eachLetter);
+      }
+
+      // example 7: Display a message I want some ______ with each food within an array. All even foods will display upper cases.
+
+      let foods = ['salad','pizza','tofu','cheese burger'];
+      for (let item=0; item < foods.length; item++) {
+        if ((item+1) % 2 === 0) {
+          console.log(`I want some ${foods[item].toUpperCase()}`);
+        } else {
+          console.log(`I want some ${foods[item]}`);
+        }
+      }
+
+      // example 8: write a JS code that will print a decrement from 30 to 0, decrement of 10, five times
+      for (let outerCounter=1; outerCounter<=5; outerCounter++) {
+        console.log(`OUTER LOOP COUNT \t\t${outerCounter}`);
+        for (let innerCounter=30; innerCounter>=0; innerCounter-=10) {
+          console.log(`Inner loop count ${innerCounter}`);
+        }
+      }
+
+      // example 9: use while loop to display number from 0 to 4.
+      let initial = 0;
+      while (initial <= 4) {
+        console.log(`The current count is = ${initial}`);
+        initial++;
+      }
+
+      // example 10: using while loop, that asks the user to guess a secret number. If the user guesses the wrong number, it will continue asking the user to enter another number. The program stops when the user guessed the secret number.
+
+      const SECRET = 8;
+      let numberUser = parseInt(prompt("Enter a number between 0 and 10"));
+      while (numberUser !== SECRET) {
+        numberUser = parseInt(prompt("WRONG! Guess another number between 0 and 10"));
+      }
+
+      // example 11: Create a JS code that will stop a decrement counter from 20 to 0, inclusive, when the counter reaches to 9.
+      for (let counter=20; counter>=0; counter--) {
+        if (counter === 9) {
+          break;
+        }
+        console.log(`Counter = ${counter}`);
+      }
+
+      // example 12: Create a JS code that will skip a number of an increment counter from 0 to 10, inclusive. The skip number is entered by user from a dialog box.
+      let userPick = parseInt(prompt("Enter a number between 0 and 10"));
+      for (let counter=0; counter<=10; counter++) {
+        if (counter === userPick) {
+          continue;
+        }
+        console.log(`Counter = ${counter}`)
+      }
+      */
+
+      // ACTIVITY 7
+      // 1a) while loop nesting with if - else if – else statement
+      let userPick = prompt("Enter a number between 1 and 10");
+      while (true) {
+        let intVal = parseInt(userPick);
+        if (isNaN(intVal)) {
+          userPick = prompt(`${userPick} is not a number. Enter a number again`);
+        } else if (intVal > 10) {
+          userPick = prompt(`${userPick} is greater than 10. Enter a number less than 10.`);
+        } else if (intVal < 1) {
+          userPick = prompt(`${userPick} is less than 1. Enter a number greater than 1.`);
+        } else {
+          console.log(`You entered ${parseInt(userPick)}`);
+          break;
+        }
+      }
+
+      // 2) for loop
+      for (let i=parseInt(userPick); i<=20; i++) {
+        console.log(i);
+      }
+
+    </script>
+  </body>
+</html>

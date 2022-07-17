@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gaurav Kuwar: activity 8 - functions</title>
+  </head>
+  <body>
+    <h1>Gaurav Kuwar: activity 8 - functions</h1>
+    <script type="text/javascript">
+      // example 1) without parameters or return values
+      function msg() {
+        console.log("Hello!");
+      }
+
+      // example 2) define a function called printCountthat prints out the number from 3 to 1, inclusive, everytime the function is called.
+      function printCount() {
+        for (let i=3; i>=1; i--) {
+          console.log(i);
+        }
+      }
+
+      // example 3) define a function that takes a parameter as name and print the argument value in the console.
+      function greeting(name) {
+        console.log(`Hello ${name}`);
+      }
+
+      // example 4) define a function that will take a message as an argument and convert its value in uppercase
+      function upperMessage(message) {
+        let upper = message.toUpperCase();
+        console.log(upper);
+      }
+
+      // example 5) function with multiple parameters, no return value: define a function that will take two parameters, firstName and lastName, and print the first name with the initial letter of the last name.
+      function greet(firstName, lastName) {
+        console.log(`Hello ${firstName} ${lastName[0].toUpperCase()}`);
+      }
+
+      // example 6) define a function that has two parameters, message and numCounts. message parameter take a string and parameter numCounts takes a number. Within the function, it prints message value numCounts time.
+      function printMsg(message, numCounts) {
+        for (counter = 0; counter<numCounts; counter++) {
+          console.log(`Counter ${counter} = ${message}`);
+        }
+      }
+
+      // example 7) mutiple parameters and no return value: define a function that accepts two parameters, dice1 and dice2 are equal to 1.
+      function isSnakeEyes(dice1, dice2) {
+        if (dice1 === 1 && dice2 === 1) {
+          console.log("Snake Eyes!");
+        } else {
+          console.log("Not Snake Eyes!");
+        }
+      }
+
+      // example 8) without parameters but return value: define a function that returns the sum of two numbers
+      function sumXY() {
+        let x = 7, y = -3;
+        return x + y;
+      }
+
+      // example 9) with parameters and return value: define a function that takes a number as parameter. The function will double the number and return the result.
+      // let userNum = parseInt(prompt("Enter a number"))
+      function doubleNumber(number) {
+        return number * 2;
+      }
+
+      // let collectNum = doubleNumber(userNum);
+
+      // example 10) define a function that adds two number and return the sum. Save the return value in a variable
+      let a = 5/6, b = 3, c = 9, d = -5;
+
+      function sumNum(num1, num2) {
+        let sum = num1 + num2;
+        return sum;
+      }
+
+      let number1 = sumNum(10, d);
+      let number2 = sumNum(a, c);
+
+      // example 11) define a function that checks if the temperature outdoor is greater than 70. The function should accept a single number argument and return a true if the temperature is greater than or equal to 70 and a false if the temperature is less than 70.
+      function isShortsWeather(temperature) {
+        return temperature >= 75;
+      }
+
+      // example 12) define a function that accepts a single array argument. The function should return the last item in an array. If the array is empty, the function should return null.
+
+      function lastElement(arrayInput) {
+        if (arrayInput === undefined) {
+          return null;
+        } else if (arrayInput.length !== 0) {
+          let lastIndex = arrayInput.length - 1;
+          return arrayInput[lastIndex];
+        } else {
+          return null
+        }
+      }
+
+      // example 13) Math functions in JS
+      let numPI = Math.PI;
+      // Math.round() returns the nearest integer
+      console.log(`PI with Math.round() = ${Math.round(numPI)}`);
+      // Math.ceil() returns the value rounded up to its nearest integer
+      console.log(`PI with Math.round() = ${Math.ceil(numPI)}`);
+      // Math.floor() returns the value rounded down to its nearest integer
+      console.log(`PI with Math.round() = ${Math.floor(numPI)}`);
+      // Math.trunc() returns the integer, whole, part of number
+      console.log(`PI with Math.trunc() = ${Math.trunc(numPI)}`);
+      // Math.pow(base, exponent) returns the value rounded down to its nearest integer
+      console.log(`Math.pow(b, e) = ${Math.pow(2, 3)}`);
+      // Math.sqrt() returns the square root of a number
+      console.log(`Math.sqrt(85) = ${Math.sqrt(85)}`);
+      // Math.random() returns a random number between 0 (inclusive), and 1 (exclusive)
+      console.log(`Math.random() = ${Math.random()}`);
+
+      // example 14) create a function that randomly generate a number between 10 and 20 inclusive
+      function pickNum() {
+        let pick = 10 + Math.round(Math.random() * 10);
+        return pick;
+      }
+
+      // example 15) Create a function that randomly pick a color from an array.
+      let colors = ['red', 'green', 'blue', 'yellow', 'orange'];
+
+      function colorPick(lastIndex) {
+        pick = Math.round(Math.random() * lastIndex);
+        return pick;
+      }
+
+      // call function colorPick()
+      pickedIndex = colorPick(colors.length);
+      console.log(`The picked color is = ${colors[pickedIndex]}`);
+
+      // ACTIVITY 8
+      // 1) checkName() function: without parameter/s or return value
+      function checkName() {
+        let userName = prompt("Enter a name:");
+        while (true) {
+          if (userName === null || userName.length === 0) {
+            userName = prompt("You forgot to enter a name. Enter a name again:");
+          } else if (isNaN(userName) === false) { // so it is a number
+            userName = prompt(`${userName} is invalid! Enter a name again:`);
+          } else {
+            console.log(`Welcome ${userName.toUpperCase()} to the class!`);
+            break;
+          }
+        }
+      }
+
+      // 2) checkNum() function: without parameter/s but return value
+      function checkNum() {
+        let userNum = prompt("Enter a number:");
+        while (userNum === null || userNum.length === 0 || isNaN(userNum)) {
+          userNum = prompt("Invalid Input! Enter a valid number:");
+        }
+        return parseInt(userNum) % 2 === 0;
+      }
+
+      // 3) lottery() function: with parameter but no return value
+      function lottery(numOfGames) {
+        for (let gameCount=0; gameCount<numOfGames; gameCount++) {
+            numArray = [];
+            for (count=0; count<5; count++) {
+              numArray.push(Math.round(Math.random() * 99));
+            }
+            console.log(numArray);
+        }
+      }
+
+    </script>
+  </body>
+</html>

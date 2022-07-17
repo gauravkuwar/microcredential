@@ -1,0 +1,377 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+header, footer {
+  color: white;
+  background-color: #212121;
+  text-align: center;
+}
+
+/* Header */
+
+.flag {
+  width: 100px;
+  vertical-align: middle;
+  margin-right: 5px;
+  animation: flagAn 1.5s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+.title_txt {
+  /* border: solid red; */
+  display:inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 2.2em;
+  font-family: "Arial Bold";
+  margin: 0;
+  animation: headerTxtAn 2s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+
+.subtitle {
+  font-size: 0.8em;
+  margin-top: 1px;
+  margin: 0;
+  font-family: "Arial";
+  animation: headerTxtAn 2s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+
+/* Header Animation */
+
+@keyframes flagAn {
+  0% {transform: translate(70%);}
+  100% {transform: translate(0%);}
+}
+
+@keyframes headerTxtAn {
+  0% {transform: translate(-110%);}
+  100% {transform: translate(0%);}
+}
+
+/* Footer */
+
+footer {
+  margin-top: 10%;
+}
+
+footer div {
+  /* border: solid red; */
+  display:inline-block;
+  width: 30%;
+  padding: 3%;
+  vertical-align: middle;
+}
+
+.fSection1, .fSection2 {
+  text-align: left;
+}
+
+.fTitle {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.sub1, .sub2 {
+  font-size: 0.8em;
+}
+
+.sub2 {
+  font-style: italic;
+}
+
+.fSection2 {
+  padding-left: 8%;
+}
+
+.fImg2Link {
+  color: white;
+  text-decoration: none;
+}
+
+.fImg2 {
+  width: 8%;
+  margin-right: 2%;
+  vertical-align: middle;
+}
+
+.fImg2Txt {
+  display: inline-block;
+  margin-left: 1%;
+  margin-top: 3%;
+}
+
+.fSection3 img {
+  width: 10%;
+}
+
+.fSection3 .fTitle {
+  margin-left: 23%;
+  margin-bottom: 10%;
+}
+
+.twitter, .facebook {
+  margin-right: 10%;
+}
+
+.fSection3 p {
+  text-align: left;
+}
+
+.fImg2Link:hover, .fSection3 img:hover {
+  opacity: 70%;
+}
+
+/* main body */
+
+.main_img_container {
+  position: relative;
+  text-align: center;
+  /* overflow: hidden; */
+}
+
+.main_img {
+  width: 100%;
+  filter: sepia(30%);
+}
+
+.mainH1Container {
+  /* border: solid red; */
+  font-size: 150%;
+  color: white;
+  font-family: "Arial Bold";
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.colosseumLink, .treviLink {
+  background-color: #d84315;
+  color: white;
+  padding: 1em 3em;
+  text-align: center;
+  border-radius: 30px;
+  display: inline;
+  font-family: "Arial Bold";
+}
+
+.colosseumLink:hover, .treviLink:hover {
+  background-color: #212121;
+  box-shadow: 0px 0px 0px 3px white;
+}
+
+.colosseumLink {
+  margin-right: 2%;
+}
+
+.internalLinks {
+  /* border: solid red; */
+  position: absolute;
+  width: 100%;
+  top: 70%;
+}
+
+.internalLinks a {
+  text-decoration: none;
+}
+
+.mainH1Container h1 {
+  animation: mainH1An 3s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+
+@keyframes mainH1An {
+  0% {transform: translate(0, 130%);}
+  100% {transform: translate(0, 0%);}
+}
+
+.mainImgHr {
+  position: absolute;
+  width: 40%;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  height: 5px;
+  color: white;
+  background-color: white;
+  animation: hrAn 4s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes hrAn {
+  0% {width: 0%; opacity: 0%;}
+  5% {opacity: 100%;}
+  50% {width: 40%}
+  95% {opacity: 100%;}
+  100% {width: 0%; opacity: 0%;}
+}
+
+.littleIntro {
+  text-align: center;
+  margin: 5% 15% 7% 15%;
+}
+
+/* text area */
+.main_content {
+  margin: 0;
+  text-align: center;
+}
+
+.subsection {
+  /* border: solid red; */
+}
+
+.textSect, .imgSect {
+  /* border: solid green; */
+  display:inline-block;
+  width: 49.5%;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.textSect {
+  padding-right: 8%;
+  padding-left: 8%;
+  text-align: center;
+}
+
+.section_button_link {
+  text-decoration: none;
+}
+
+.section_button {
+  background-color: #d84315;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  border-radius: 30px;
+  font-family: "Arial Bold";
+  margin-top: 10%;
+}
+
+.section_button:hover {
+  background-color: #212121;
+  box-shadow: 0px 0px 5px gray;
+}
+
+.imgSect {
+  overflow:hidden;
+  position: relative;
+}
+
+.sectionImg {
+  width: 100%;
+}
+
+.sectionImg:hover{
+  filter: grayscale(100%);
+}
+
+.moreInfo {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.moreInfo .textSect {
+  /* border: solid red; */
+  padding: 1em 3em 3em 3em;
+  text-align: left;
+  vertical-align: top;
+}
+
+.moreInfo .textSect li {
+  margin-bottom: 7px;
+}
+
+.moreInfo .textSect a {
+  text-decoration: none;
+  color: black;
+}
+
+.moreInfo .textSect a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.tableHeader {
+  margin: 3% 0%;
+}
+
+.costTable {
+  border-collapse: collapse;
+  width: 70%;
+  align-items: center;
+  box-shadow: 0px 0px 10px gray;
+}
+
+.costTable th, .costTable td {
+  padding: 3%;
+  text-align: center;
+  border: solid 2px black;
+  font-size: 1.1em;
+}
+
+.tableTitle {
+  color: white;
+}
+
+/* Colosseum Page Styling */
+
+.cTitleContainer, .cTitle{
+  /* border: solid red; */
+  margin: 0;
+  padding: 20px 5%;
+}
+
+.cTitle {
+    display: inline;
+    vertical-align: middle;
+}
+
+.backImg {
+  width: 40px;
+  float: left;
+  vertical-align: middle;
+}
+
+figure {
+  margin: 2% 0 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+.cMainImg, .cMainImg3{
+  width: 29%;
+}
+
+.cMainImg {
+  margin-right: 2%;
+}
+
+.cTextContainer {
+  margin: 5% 10%;
+}
+
+.cfooter {
+  margin: 0;
+  padding: 5px;
+}
