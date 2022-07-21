@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Activity 10: DOM</title>
+    <style media="screen">
+      .colorBlue {
+        color: darkblue;
+        text-align: center;
+        font-family: "Arial";
+      }
+      .colorSubtitle {
+        color: orange;
+        text-align: rightl
+        font-family: Arial;
+      }
+      .subtitle {
+        font-size: 2em;
+        text-align: center;
+        background-color: lightgreen;
+      }
+      li {
+        background-color: magenta;
+      }
+      .highlight {
+        background-color: olive;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- example 1 -->
+    <p id="one">Here is some text</p>
+    <!-- example 2 -->
+    <p>Here is some text 1</p>
+    <p>Here is some text 2</p>
+    <p>Here is some text 3</p>
+    <!-- example 3, 4and 5 -->
+    <div id="special">
+      <p class="name">First Name</p>
+      <p class="name">Last Name</p>
+      <p class="n1">Full Name</p>
+    </div>
+
+    <!-- example 10 -->
+    <img src="https://devsprouthosting.com/images/egg.jpg" width="200px" class="image1">
+
+    <!-- example 11 -->
+    <h2 class="colorSubtitle" id="subH2">Example of classes</h2>
+
+    <!-- example 12 -->
+    <ul>
+      <li>Hello 1</li>
+      <li class="highlight">Hello 2</li>
+      <li>Hello 3</li>
+      <li>Hello 4</li>
+      <li class="highlight">Hello 5</li>
+      <li>Hello 6</li>
+    </ul>
+    <script type="text/javascript">
+      // example 13) create and append a new element to the <body>
+      // find location of where you want to add new element
+      let newLocation = document.querySelector('#subH2');
+      const newImg = document.createElement('img'); // step 1) create an element
+      // step 2) gives content to source
+      newImg.src = 'https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw2bd1e5be/images/Summer2022/295funsize_su3_hm_to.gif?yocs=s_';
+      // step 3) append to end of <body>
+      newLocation.appendChild(newImg);
+      newImg.style.width = "80%";
+
+      // example 12) classList.toggle
+      const listItem = document.querySelectorAll('li');
+      for (let eachItem of listItem) {
+        eachItem.classList.toggle('highlight');
+      }
+
+      // example 11) adding classes
+      let subtitleH2 = document.querySelector('#subH2');
+      subtitleH2.classList.add('subtitle');
+
+      // example 10
+      let image = document.querySelector('.image1');
+      image.setAttribute('alt', 'image of an egg');
+      image.setAttribute('title', 'White Egg');
+
+      // example 8) add a class name "colorBlue" to <p>
+      let fullName = document.querySelector('.name');
+      fullName.className = 'colorBlue';
+
+      // example 6
+      let allP = document.querySelectorAll('p')[2];
+      allP.innerHTML = '<b><em>HELLO</em></b> THERE!';
+
+      // example 5
+      let collectName = document.querySelectorAll('.name');
+      for (let name of collectName) {
+        name.style.padding = "1em";
+        name.style.backgroundColor = 'yellow';
+      }
+
+      // example 4
+      let container = document.querySelector("#special");
+      let n1P = document.querySelector('.n1');
+      let pTag = document.querySelector('p');
+
+      container.style.backgroundColor = 'lightBlue';
+      n1P.style.fontSize = '1.5em';
+      pTag.style.textAlign = 'center';
+
+      // example 3
+      let n = document.getElementsByClassName('name');
+      console.log(n);
+
+      for (let eachName of n) {
+        eachName.style.color = 'magenta';
+      }
+
+      // example 2
+      let myText = document.getElementsByTagName('p');
+
+      // example 1
+      let pOne = document.getElementById('one');
+      pOne.style.color = 'red';
+    </script>
+  </body>
+</html>
