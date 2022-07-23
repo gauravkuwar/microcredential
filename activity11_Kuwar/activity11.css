@@ -1,0 +1,74 @@
+body {
+  background-color: lightblue;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.colorContainer {
+  width: 50%;
+  height: 200px;
+  border: ridge 10px gray;
+  margin: 2em auto;
+}
+
+#btnColor {
+  background-color: lightgray;
+  color: purple;
+  padding: 0.5em;
+  border-radius: 1em;
+  margin: 5em 30%;
+  width: 40%;
+}
+
+/* example 9 */
+.divContainer {
+  display: inline-block;
+  width: 100%;
+}
+.divColor {
+  width: 30%;
+  height: 100px;
+  margin-left: 2%;
+  margin-bottom: 2em;
+  border: inset 10px;
+  float: left;
+}
+
+/* example 11 */
+.display9 {
+  position: fixed;
+  right: 0%;
+  top: 10%;
+  padding: 2em;
+  background-color: rgb(10, 10, 10, 0.8);
+  width: 50%;
+  color: white;
+}
+
+/* example 12 */
+html {
+  scroll-behavior: smooth;
+}
+.toTop {
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  background: rgba(20, 20, 20, 0.9);
+  display: none;
+}
+
+.toTop a {
+  color: white;
+  text-decoration: none;
+}
+
+.toTop:hover {
+  box-shadow: 0px 0px 5px 2px black;
+  opacity: 0.6;
+}
