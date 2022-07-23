@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Arial";
+}
+/* FORMS */
+.input1, .input2 {
+  display: block;
+  margin-bottom: 1em;
+}
+.input1 {
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  padding: 0.5em 2em;
+  margin-top: 0.5em;
+}
+.input1:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0px 0px 0px 2px black;
+}
+
+
+/* SLIDESHOW */
+.container_slideshow {
+  /* border: solid red; */
+  width: 80%;
+  margin: 2em auto;
+  position: relative;
+  overflow: hidden;
+}
+.slide, .slideAuto {
+  /* border: solid green; */
+  width: 100%;
+  position: relative;
+  display: none;
+  animation: slideAnimation 1s;
+}
+@keyframes slideAnimation {
+  0% {transform: translate(50px);}
+  100% {transform: translate(0px);}
+}
+.slide img, .slideAuto img {
+  width: 100%;
+  vertical-align: middle;
+}
+.slide p, .slideAuto p {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 30%;
+  bottom: 30%;
+  color: white;
+  font-size: 5em;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0px 0px 30px black;
+}
+.prev, .next {
+  position: absolute;
+  top: 40%;
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  padding: 0.5em 1em;
+  opacity: 70%;
+}
+.prev {
+  left: 1%;
+}
+.next {
+  right: 1%;
+}
+
+.prev:hover, .next:hover {
+  opacity: 100%;
+  text-shadow: 0px 0px 30px black;
+}
+
+/* PRACTICE */
+.container {
+  width: 100%;
+  height: 200px;
+  /* display: inline-block; */
+  box-shadow: 1px 1px 5px gray;
+  margin-bottom: 3em;
+}
+.title {
+  width: 100%;
+  height: 20%;
+}
+.intro {
+  width: 65%;
+  height: 80%;
+  margin-right: 2%;
+  float: left;
+}
+.footer {
+  width: 33%;
+  height: 80%;
+  float: left;
+}
+
+/* CARDS ACTIVITY AND MODAL WINDOW*/
+#openItem1 {
+  display: block;
+  padding: 0.5em;
+  color: white;
+  background-color: darkgreen;
+  text-align: center;
+  text-decoration: none;
+}
+
+#openItem1:hover {
+  color: darkgreen;
+  background-color: lightgreen;
+}
+.modalWindow {
+  background-color: rgba(50, 50, 50, 0.6);
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  display: none;
+}
+.modalBody {
+  width: 60%;
+  margin: 5% auto;
+  height: 500px;
+  background-color: white;
+}
+.modalHeader {
+  background-color: darkgreen;
+  height: 10%;
+  padding: 0.5em;
+}
+.modalHeader a {
+  color: white;
+  text-decoration: none;
+}
+.modalHeader a:hover {
+  text-shadow: 0px 0px 5px black;
+}
+
+.modalInfo {
+  height: 70%;
+  padding: 0.5em;
+}
+.modalFooter {
+  background-color: darkgreen;
+  height: 20%;
+  padding: 0.5em;
+}
+
+.mainTitle {
+  text-align: center;
+  color: darkgreen;
+  font-size: 2.5em;
+  /* padding-top: 2em; */
+  padding-bottom: 0.5em;
+}
+.cardContainer {
+  /* border: solid red; */
+  width: 100%;
+  display: inline-block;
+  margin-top: 2em;
+  margin-bottom: 5em;
+}
+.nav {
+  width: 100%;
+  /* background: orange; */
+}
+.nav a {
+  /* border: solid green; */
+  background-color: darkgreen;
+  display: inline-block;
+  width: 32.5%;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.nav a:hover {
+  background-color: lightgreen;
+  color: black;
+  box-shadow: 0px 0px 5px black;
+}
+
+.card {
+  /* border: solid gray; */
+  box-shadow: 1px 1px 3px gray;
+  width: 24%;
+  margin-left: 1%;
+  height: 100%;
+  float: left;
+}
+.card img {
+  width: 100%;
+  height: 45%;
+}
+.card h3 {
+  color: darkgreen  ;
+  padding-top: 0.5em;
+  text-align: center;
+}
+.card p {
+  padding: 1em;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .container {
+    height: 500px;
+  }
+  .title {
+    height: 10%;
+    font-size: 3em;
+    overflow: hidden;
+  }
+  .intro {
+    height: 50%;
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+    height: 40%;
+  }
+  /* CARDS */
+  .card {
+    width: 48%;
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* NAV */
+  .nav a {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 1%;
+  }
+  /* CARDS */
+  .card {
+    width: 80%;
+    margin-left: 10%;
+  }
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav Kuwar - activity 12</title>
+    <link rel="stylesheet" href="activity12.css">
+  </head>
+  <body>
+    <!-- RESPONSIVE -->
+    <h1 class="mainTitle">Some Stuff</h1>
+    <nav class="nav">
+      <a href="https://www1.nyc.gov/" target="_blank">NYC</a>
+      <a href="https://www.cuny.edu/" target="_blank">CUNY</a>
+      <a href="https://www.qcc.cuny.edu/" target="_blank">QCC</a>
+    </nav>
+    <section class="cardContainer">
+      <div class="card">
+        <img src="images/apt.jpg" alt="image of apartment">
+        <h3>Red Apartment</h3>
+        <p>A red apartment building with bunch of flowers</p>
+        <!-- open modal window -->
+        <a id="openItem1">ADD TO CART</a>
+      </div>
+
+      <div class="card">
+        <img src="images/roof.jpg" alt="image of a roof">
+        <h3>Roof Top</h3>
+        <p>A red apartment building with bunch of flowers</p>
+      </div>
+      <div class="card">
+        <img src="images/fruits.jpg" alt="image of some fruits">
+        <h3>Fruits</h3>
+        <p>A red apartment building with bunch of flowers</p>
+      </div>
+      <div class="card">
+        <img src="images/waves.jpg" alt="image of waves">
+        <h3>Waves</h3>
+        <p>A red apartment building with bunch of flowers</p>
+      </div>
+    </section>
+
+    <!-- forms -->
+      <hr>
+      <input class="input2" type="text" name="username" maxlength="20" placeholder="Up to 20 characters">
+      <br>
+      <input type="password" name="" value="" placeholder="Up to 8 characters" maxlength="8" id="myPassword">
+      <a id="viewPassword">View Password</a>
+
+      <!-- example 4 -->
+      <p>Select Your favorite animal (checkbox)</p>
+      <input type="checkbox" name="animals" value="Cat" id="cat">
+      <label for="cat">Cat</label>
+      <br>
+      <input type="checkbox" name="animals" value="Dog" id="dog">
+      <label for="dog">Dog</label>
+
+      <!-- example 5 -->
+      <h3>Select a gender</h3>
+      <label>
+        <input type="radio" name="gender" value="female">
+        Female
+      </label>
+      <label>
+        <input type="radio" name="gender" value="male">
+        Male
+      </label>
+      <label>
+        <input type="radio" name="gender" value="male">
+        Others
+      </label>
+    <hr>
+    <!-- example 6 -->
+    <form action="https://www.google.com/search">
+      <input type="search" name="q" placeholder="Type your search">
+      <button>Google Search</button>
+    </form>
+    <form action="https://www.youtube.com/results">
+      <input type="search" name="search_query" placeholder="Type your search">
+      <button>Youtube Search</button>
+    </form>
+    <label for="date">Select appointment date:</label>
+    <input type="date" name="appointment" value="" id="date">
+
+    <!-- SLIDESHOW -->
+    <h1>MANUAL SLIDESHOW</h1>
+    <section class="container_slideshow">
+      <div class="slide">
+        <img src="images/vase.jpg">
+        <p>Vase</p>
+      </div>
+      <div class="slide">
+        <img src="images/fruits.jpg">
+        <p>Fruits</p>
+      </div>
+      <div class="slide">
+        <img src="images/roof.jpg">
+        <p>Roof</p>
+      </div>
+      <div class="slide">
+        <img src="images/waves.jpg">
+        <p>Waves</p>
+      </div>
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+    </section>
+
+    <h1>AUTOMATIC SLIDESHOW</h1>
+    <section class="container_slideshow">
+      <div class="slideAuto">
+        <img src="images/vase.jpg">
+        <p>Vase</p>
+      </div>
+      <div class="slideAuto">
+        <img src="images/fruits.jpg">
+        <p>Fruits</p>
+      </div>
+      <div class="slideAuto">
+        <img src="images/roof.jpg">
+        <p>Roof</p>
+      </div>
+      <div class="slideAuto">
+        <img src="images/waves.jpg">
+        <p>Waves</p>
+      </div>
+    </section>
+
+    <!-- PRACTICE -->
+    <h1>Gaurav Kuwar</h1>
+    <section class="container">
+      <header class="title">
+        TITLE
+      </header>
+      <main class="intro">
+        INTRO
+      </main>
+      <footer class="footer">CONTACT US</footer>
+    </section>
+
+    <!-- modal window for item1 -->
+    <form id="myForm" action="sentForm.html" method="post">
+      <section class="modalWindow">
+        <div class="modalBody">
+          <header class="modalHeader">
+            <a id="closeModal1" href="#">&#10005;</a>
+          </header>
+          <main CLASS="modalInfo">
+            INFORMATION OF THE PRODUCT <br><br>
+            <label for="firstN">
+              First Name
+              <input id="firstN" type="text" name="firstName">
+            </label>
+            <label for="lastN">
+              Last Name
+              <input id="lastN" type="text" name="lastName">
+            </label>
+          </main>
+          <footer class="modalFooter">
+            <input type="submit" value="SUBMIT" class="input1">
+          </footer>
+        </div>
+      </section>
+    </form>
+
+    <script type="text/javascript" src="activity12.js"></script>
+  </body>
+</html>
