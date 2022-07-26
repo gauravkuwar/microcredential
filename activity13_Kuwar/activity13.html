@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style media="screen">
+      kbd {
+        color: lightblue;
+      }
+      .rounded, .rounded-circle, .img-thumbnail{
+        width: 50%;
+        margin: 2em 25%;
+      }
+      figure img {
+        width: 90%;
+      }
+      .dropdown {
+        margin-top: 20%;
+      }
+      .title {
+        text-align: center;
+        padding: 1em;
+        font-size: 2em;
+        font-weight: bold;
+        color: white;
+        text-shadow: 0px 0px 20px black;
+      }
+      .col-lg-2, .col-lg-8 {
+        border: solid red;
+        height: auto;
+      }
+      .col-lg-4, .col-lg-8 {
+        border: solid green;
+        height: 100px;
+      }
+    </style>
+    <title>Gaurav Kuwar - activity 13: bootstrap</title>
+  </head>
+  <body>
+    <!-- RESPONSIVE WEBSITE -->
+    <header class="bg-warning title">
+      The Northern Lights
+    </header>
+    <main class="container-fluid">
+      <section class="row">
+        <div class="col-lg-2 col-md-1 col-sm-4">
+          <ul class="list-group" style="margin-top: 5em;">
+            <li class="list-group-item"><a href="#">Home</a></li>
+            <li class="list-group-item"><a href="#list">List</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-8 col-md-9 col-sm-8" style="border: solid red; height: auto;">
+          <img src="images/vase.jpg" width="100%" alt="">
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-12"></div>
+      </section>
+      <section class="row">
+        <div class="col-lg-8 col-md-6"></div>
+        <div class="col-lg-4 col-md-6"></div>
+      </section>
+    </main>
+
+    <!-- DROPDOWN -->
+    <div class="dropdown dropup">
+      <button type="button" class="dropdown-toggle btn" data-bs-toggle="dropdown">CUNY Community College</button>
+      <ul class="dropdown-menu">
+        <li><a href="https://www.qcc.cuny.edu" target="_blank" class="dropdown-item">Queensborough Community College</a></li>
+        <li><a href="https://www.ccny.cuny.edu" target="_blank" class="dropdown-item">City College of New York</a></li>
+      </ul>
+    </div>
+
+    <!-- LIST -->
+    <h2>Food Shopping (Regular)</h2>
+    <ul>
+      <li>Apple</li>
+      <li>Milk</li>
+    </ul>
+
+    <h2 id="list">Food Shopping (Bootstrap)</h2>
+    <ul class="list-group">
+      <li class="list-group-item">Apple</li>
+      <li class="list-group-item active">Milk</li>
+    </ul>
+
+    <!-- IMAGES -->
+    <img class="rounded" src="images/vase.jpg" alt="image of a vase">
+    <img class="rounded-circle" src="images/tower.jpg" alt="image of a tower">
+    <img class="img-thumbnail" src="images/fruits.jpg" alt="image of a fruits">
+
+    <figure>
+      <img class="mx-auto d-block" src="images/vase.jpg" alt="image of a vase">
+      <figcaption>Regular figure</figcaption>
+    </figure>
+    <figure class="figure-img">
+      <img class="mx-auto d-block" src="images/vase.jpg" alt="image of a vase">
+      <figcaption class="figure-caption">Regular figure</figcaption>
+    </figure>
+
+    <!-- TEXT -->
+    <h1 class="text-white bg-primary">Gaurav Kuwar - activity 13: <mark style="background-color: lightgreen;">bootstrap</mark></h1>
+    <p class="h1 mark">this is a parargraph!</p>
+    <p class="display-1">this is a parargraph!</p>
+    <p>use <kbd>ctrl + s</kbd> to save</p>
+    <p>This is a quote that will be inside a blockquote in bootstrap in this activity</p>
+    <blockquote cite="https://getbootstrap.com">
+      <p>This is a quote that will be inside a blockquote in bootstrap in this activity</p>
+      <footer class="blockquote-footer">From Wikipedia.org website</footer>
+    </blockquote>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
