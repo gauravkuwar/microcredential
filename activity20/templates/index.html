@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <!--if you want to get something from server you put get--> <!--if you want to send data to the server you put POST-->
+  <form class="" action="{{url_for('thankyou')}}" method="POST" >
+  <!-- name is for python to pull off user's input: give me the value of input what the name is email_name-->
+    <fieldset>
+      <legend>Collecting Weight and Height for BMI</legend>
+      <p>Instruction: Please fill the entires to get poulations statistics on Weight, Height and BMI</p>
+      <input type="email" name="email_name" required value="" title="Your Info will be safe with us" placeholder="Enter your Email" style="width:300px">
+      <input type="number" min="50" max="300" name="height_name" required value="" title="Your Info will be safe with us" placeholder="Enter your Height in Meter" style="width:200px">
+      <input type="number" min="20" max="300" name="weight_name" required value="" title="Your Info will be safe with us" placeholder="Enter your Weight in Kg" style="width:200px">
+      <!--define the role of the button-->
+      <button type="submit" name="button">Submit</button>
+    </fieldset>
+  </form>
+
+  </body>
+</html>
