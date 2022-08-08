@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav Kuwar - Furniture</title>
+    <link rel="stylesheet" href="static/main.css">
+  </head>
+  <body>
+    <header class="mainHeader">
+      <div class="homeTitle">
+        <a class="homeLink" href="#">Furniture</a>
+      </div>
+      <div class="navRightItems">
+        <div class="rightNavContainer">
+          <a class="rightLink" href="shop_all.html">Shop</a>
+        </div>
+        <div class="rightNavContainer">
+          <a id="reviewsHeader" class="rightLink" href="#reviews">Reviews</a>
+        </div>
+        <a class="cartLink" href="cart.html">
+          <img src="static/images/cart_icon.png" alt="Cart icon">
+          <div class="cartItemCounter">
+            0
+          </div>
+        </a>
+      </div>
+    </header>
+    <main class="homeMain">
+      <div class="firstContainer">
+        <div class="firstLeft">
+          <h1>Furniture for your Perfect Home</h1>
+          <p>Change the look of your home.</p>
+          <a href="#shop"><button>Get Started</button></a>
+        </div><div class="firstRight">
+          <img src="static/images/main_img1.jpg" alt="image of sofa">
+        </div>
+      </div>
+      <div id="shop" class="shopContainer">
+        <h1>Best Sellers</h1>
+        <div class="itemsContainer">
+            <!-- ITEMS GO HERE FROM JS-->
+        </div>
+        <a class="shopShowAll" href="shop_all.html">All Furniture</a>
+      </div>
+      <div class="midContainer">
+        <div class="midImg1">
+          <img src="static/images/vases.jpg" alt="image of vases">
+        </div><div class="midImg2">
+          <img src="static/images/main_img.jpg" alt="image of chairs">
+        </div><div class="midText">
+          <div class="midTextInner">
+            <p>Shop for the Perfect and Best Furniture</p>
+            <a href="shop_all.html"><button>Discover More</button></a>
+          </div>
+        </div>
+      </div>
+      <div id="reviews" class="reviewsContainer">
+        <h1>What our Customers Say</h1>
+        <div class="reviewRow">
+          <div class="prevReview">
+            &#8249;
+          </div><div class="nextReview">
+            &#8250;
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footerContainer"><div class="col1">
+        <h3>Project 2 - Sales Website - Furniture</h3>
+        <p>@ Designed by Gaurav Kuwar 2022</p>
+        <p><em>Information used in this webpage is for educational purpose.</em></p>
+      </div><div class="col2">
+        <h3>Follow Us</h3>
+        <a class="twitter" href="https://twitter.com/qcc_cuny" target="_blank">
+          <img src="static/images/twitter.png" title="Twitter" alt="twitter icon">
+        </a>
+        <a class="facebook" href="http://www.facebook.com/QueensboroughCUNY" target="_blank">
+          <img src="static/images/facebook.png" title="Facebook" alt="facebook icon">
+        </a>
+        <a class="instagram" href="https://www.instagram.com/queensboroughcc_cuny/" target="_blank">
+          <img src="static/images/instagram.png" title="Instagram" alt="instagram icon">
+        </a>
+      </div></div>
+    </footer>
+    <a href="#">
+      <div class="goToTop">
+        <img src="static/images/go_to_top.svg" alt="Go To Top">
+      </div>
+    </a>
+
+    <section class="modalWindow">
+      <div class="modalBody">
+        <div class="modalImages">
+          <header id="modalHeader1" class="modalHeader">
+            <a class="closeModal">&#10005;</a>
+          </header>
+          <div class="modalImg">
+            <div class="modalImgInner">
+              <img class="modalThumbImg" src="" alt="">
+            </div>
+          </div><div class="modalImg">
+            <div class="modalImgInner">
+              <img class="modalImg1" src="" alt="">
+            </div>
+          </div><div class="modalImg">
+            <div class="modalImgInner">
+              <img class="modalImg2" src="" alt="">
+            </div>
+          </div><div class="modalImg">
+            <div class="modalImgInner">
+              <img class="modalImg3" src="" alt="">
+            </div>
+          </div>
+        </div><div class="modalRight">
+          <header id="modalHeader2" class="modalHeader">
+            <a class="closeModal">&#10005;</a>
+          </header>
+          <div class="modalContent">
+            <h1>Name</h1>
+            <p>Description</p>
+            <div>
+              <p class="modalPrice">Price</p>
+            </div>
+          </div>
+          <button id="modalCartButton" class="addToCart">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="static/js/items.js"></script>
+    <script type="text/javascript" src="static/js/helper.js"></script>
+    <script type="text/javascript" src="static/js/reviews.js"></script>
+    <script type="text/javascript" src="static/js/add_reviews.js"></script>
+    <script type="text/javascript" src="static/js/addShopItems.js"></script>
+    <script type="text/javascript" src="static/js/main.js"></script>
+  </body>
+</html>
