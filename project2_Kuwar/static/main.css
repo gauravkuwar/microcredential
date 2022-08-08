@@ -1045,9 +1045,20 @@ footer {
   }
 }
 
-@media only screen and (max-height: 600px) {
+@media only screen and (max-height: 588px) {
   .modalBody {
     height: 100%;
-    margin-top: 0;
+    margin-top: 0 !important;
+  }
+  .modalImages {
+    min-height: 500px;
+  }
+  .modalRight {
+    min-height: 500px;
+  }
+}
+@media only screen and (max-height: 650px) {
+  .modalBody {
+    margin-top: 2.5%;
   }
 }
