@@ -1,8 +1,0 @@
-#!/Users/gauravk/Documents/CLASSES/2022/SUMMER2022/EVERUP/new_git/microcredential/project2_with_Flask/virtual/bin/python3
-# -*- coding: utf-8 -*-
-import re
-import sys
-from flask.cli import main
-if __name__ == '__main__':
-    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
-    sys.exit(main())
