@@ -3,7 +3,7 @@
 - Built a responsive furniture sales website HTML, CSS, and JavaScript.
 - Used Python Flask backend to add user information from checkout form to PostgreSQL database
 
-### Link to app:
+### Link to Website:
 
 https://gauravkuwar.github.io/microcredential/project2_Kuwar/home.html
 
